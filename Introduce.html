@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control Setting</title>
+
+  <!-- format for navbar -->
+  <link rel="stylesheet" href="ControlSetting/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="ControlSetting/vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="ControlSetting/css/fontastic.css">
+  <link rel="stylesheet" href="ControlSetting/css/grasp_mobile_progress_circle-1.0.0.min.css">
+  <link rel="stylesheet" href="ControlSetting/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="ControlSetting/css/style.default.css" id="theme-stylesheet">
+  <link rel="stylesheet" href="ControlSetting/css/custom.css">
+
+</head>
+
+<style>
+  body {
+    background-color: LightGray;
+  }
+
+  h2 {
+    /* text-align: center; */
+    font-size: 35px;
+    font-family: Georgia, serif;
+    margin-top: 30px;
+  }
+
+  p {
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Georgia, serif;
+  }
+
+  button {
+    background-color: #4CAF50;
+    /* Green */
+    width: 120px;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 5px 10px 5px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+</style>
+
+<body>
+  <nav class="side-navbar">
+    <div class="side-navbar-wrapper">
+      <div class="main-menu">
+        <h5 class="sidenav-heading"><i class="fa fa-gear"></i>Control/Setting</h5>
+        <ul id="side-main-menu" class="side-menu list-unstyled">
+          <li><a href="Introduce.html"><b><strong class="text-primary"
+                  style="font-size: 16px;">Introduce</strong></b></a></li>
+          <li><a href="Control.html">Control</a></li>
+          <li><a href="SelectMap.html">Select Map </a></li>
+          <li><a href="AboutThisGame.html">About this Game</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-top:50px;">
+    <dl>
+      <dt>
+        <h2>Character</h2>
+      </dt>
+      <dd>
+        <p class="font-weight-normal"> &emsp; &#10020;
+          <img src="image/Intro/Robot0.png"> <span> </span>
+          <strong><i>Fūjin:</i></strong>
+          <span>With greate running speed and fire speed, Fūjin can kill enemy in the blink of an eye. Strength =
+            1.</span>
+        </p>
+      </dd>
+      <dd>
+        <p class="font-weight-normal"> &emsp; &#10020;
+          <img src="image/Intro/Robot1.png"> <span> </span>
+          <strong><i>Neptune:</i></strong>
+          <span>With running on water surface ability, lake and river can not embarrass him. Strength = 2.</span>
+        </p>
+      </dd>
+      <dd>
+        <p class="font-weight-normal"> &emsp; &#10020;
+          <img src="image/Intro/Robot2.png"> <span> </span>
+          <strong><i>Hercules:</i></strong>
+          <span>With the great strength, Strength = 3, almost no-terrain but water can stop his step.</span>
+        </p>
+      </dd>
+
+      <dt>
+        <h2>Gift item</h2>
+      </dt>
+      <dd>
+        <p class="font-weight-normal"> &emsp; &#10020;
+          <img src="image/Gift/life.png"> <span> </span>
+          <span> + 1 life more.</span>
+        </p>
+      </dd>
+      <dd>
+        <p class="font-weight-normal"> &emsp; &#10020;
+          <img src="image/Gift/boom.png"> <span> </span>
+          <span>Destroy all enemies immediately.</span>
+        </p>
+      </dd>
+      <dd>
+        <p class="font-weight-normal"> &emsp; &#10020;
+          <img src="image/Gift/bullet.png"> <span> </span>
+          <span> Get destroying concrete ability in short time.</span>
+        </p>
+      </dd>
+      <dd>
+        <p class="font-weight-normal"> &emsp; &#10020;
+          <img src="image/Gift/Defend.png"> <span> </span>
+          <span> Get more defending ability in short time.</span>
+        </p>
+      </dd>
+      <dd>
+        <p class="font-weight-normal"> &emsp; &#10020;
+          <img src="image/Gift/water.png"> <span> </span>
+          <span> Get running on water ability in short time.</span>
+        </p>
+      </dd>
+    </dl>
+  </div>
+
+  <div class="container" style="margin-top: 100px;" align="center">
+    <button onclick="turnBack()">Turn back</button>
+  </div>
+
+
+  </div>
+
+  <script>
+    function turnBack() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+
+</html>

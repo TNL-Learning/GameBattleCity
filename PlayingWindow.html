@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing</title>
+</head>
+
+<style>
+    .flex-container {
+        background-color: LightGray;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .flex-item-left {
+        padding: 10px;
+        /* flex: 30%; */
+        width: 300px;
+    }
+
+    .flex-item-right {
+        
+        padding: 10px;
+    }
+    p{
+        font-size: 30px;
+    }
+    button{
+      font-size: 25px;  
+    }
+</style>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item-left" >
+            <div style="margin-bottom: 50px" align="bottom">
+                <button onclick="pushPauseButton(this)">Pause</button>
+                <button onclick=" turnBack()">Return</button>
+            </div>
+            <p id="Infor"></p>
+        </div>
+        <div class="flex-item-right" id = "view-space">
+            <!-- <img src = "image/Intro/GameOver2.gif" style="position: absolute;width: 50%; margin: left; margin-left: 150px; margin-top: 200px;" id = "game-over"> -->
+        </div>
+    </div>
+
+
+    <script src="handle/Parameter.js"></script>
+    <script src="handle/Terrain.js"></script>
+    <script src="handle/Bullet.js"></script>
+    <script src="handle/Tank.js"></script>
+    <script src="handle/Player.js"></script>
+    <script src="handle/Robot.js"></script>
+
+    <script src="handle/Team.js"></script>
+    <script src="handle/RobotTeam.js"></script>
+    <script src="handle/PlayerTeam.js"></script>
+    <script src="handle/Gift.js"></script>
+    <script src="handle/Home.js"></script>
+
+    <script src="handle/BlockTerrain.js"></script>
+
+    <script src="handle/MapGame.js"></script>
+    <script src="handle/MainGame.js"></script>
+
+</body>
+
+</html>

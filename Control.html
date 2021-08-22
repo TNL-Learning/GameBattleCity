@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control Setting</title>
+
+  <!-- format for table: -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- format for navbar -->
+  <link rel="stylesheet" href="ControlSetting/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="ControlSetting/vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="ControlSetting/css/fontastic.css">
+  <link rel="stylesheet" href="ControlSetting/css/grasp_mobile_progress_circle-1.0.0.min.css">
+  <link rel="stylesheet" href="ControlSetting/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="ControlSetting/css/style.default.css" id="theme-stylesheet">
+  <link rel="stylesheet" href="ControlSetting/css/custom.css">
+  
+</head>
+
+<style>
+  td{
+    text-align: center;
+  }
+  thead{
+    font-size: 25px;
+    color: wheat;
+    background-color: gray;
+
+  }
+  tbody{
+    font-size: 20px;
+  }
+  body{
+    background-color: LightGray;
+  }
+  h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 35px;
+    font-family: "Times New Roman";
+  }
+  button {
+  background-color: #4CAF50; /* Green */
+  width: 120px;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 5px 10px 5px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+</style>
+
+<body>
+  <nav class="side-navbar">
+    <div class="side-navbar-wrapper">
+      <div class="main-menu">
+        <h5 class="sidenav-heading"><i class="fa fa-gear"></i>Control/Setting</h5>
+        <ul id="side-main-menu" class="side-menu list-unstyled">
+          <li><a href="Introduce.html">Introduce</a></li>
+          <li><a href="Control.html"><b><strong class="text-primary" style="font-size: 16px;">Control</strong></b></a></li>
+          <li><a href="SelectMap.html">Select Map </a></li>
+          <li><a href="AboutThisGame.html">About this Game </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-top:100px;"> 
+    <h2>Set Control Keyboard</h2>
+    <table id="map-control" class="table">
+
+    </table>
+  </div>
+  
+  <div class="container" align="center" style="margin-top: 100px; ">
+    <button onclick="saveMapControl()">Save</button>
+    <button onclick="turnBack()">Turn back</button>
+  </div>
+
+  <script src="handle/Parameter.js"></script>
+  <script src="handle/Control_Setting/Control.js"></script>
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle City</title>
+</head>
+<style>
+    h1 {
+        color: LightGoldenRodYellow;
+        font-size: 120px;
+        margin-left: 50px;
+    }
+
+    p {
+        height: 100px;
+        color: lightgray;
+        font-size: 60px;
+        font-family: cursive;
+        font-weight: bold;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    span:hover {
+        font-size: 65px;
+        color: #2a283d;
+    }
+
+    body {
+        background-image: url('image/Intro/background.jpg');
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex-item-left {
+        padding: 10px;
+        flex: 50%;
+    }
+
+    .flex-item-right {
+        padding: 10px;
+        flex: 50%;
+    }
+</style>
+
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item-left">
+            <h1>Battle City</h1>
+        </div>
+        <div class="flex-item-right">
+            <p><span onclick="gotoPage('PlayingWindow.html')">START</span></p>
+            <p><span onclick="gotoPage('Introduce.html')">SETTING</span></p>
+            <p><span onclick="close_window()">EXIT</span></p>
+        </div>
+    </div>
+
+    <script>
+        function gotoPage(link) {
+            window.location.href = link;
+        }
+        function close_window() {
+            if (confirm("Close Window?")) {
+                window.close();
+            }
+        }
+    </script>
+</body>
+
+</html>
